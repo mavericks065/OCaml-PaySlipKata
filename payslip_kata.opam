@@ -1,0 +1,15 @@
+opam-version: "1.2"
+name: "payslip_kata"
+version: "~unknown"
+maintainer: "nicolas <nicolas065@gmail.com>"
+authors: "nicolas <nicolas065@gmail.com>"
+build: [
+   ["dune" "build" "-p" name "-j" jobs]
+]
+install: [make "install"]
+remove: ["ocamlfind" "remove" "payslip_kata"]
+depends: [
+ "dune" {build & >= "1.1.1"}
+ "base" {>= "0.11.1"}
+ "ppx_jane"
+]

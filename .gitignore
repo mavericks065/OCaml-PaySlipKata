@@ -1,0 +1,4 @@
+_build/*
+bin/.merlin
+src/.merlin
+payslip_kata.install

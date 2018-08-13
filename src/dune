@@ -1,0 +1,5 @@
+(library
+    (name payslip_kata_lib)
+    (libraries base)
+    (inline_tests)
+    (preprocess (pps ppx_jane)))
